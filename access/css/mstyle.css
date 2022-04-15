@@ -1,0 +1,23 @@
+@media (max-width: 1113px) {
+    .nav-menu {
+        display: none;
+    }
+}
+@media (max-width: 540px) {
+    
+    .norm-text {
+        font-size: 16px;
+    }
+    .btn-text {
+        font-size: 16px;
+    }
+    .high-text {
+        font-size: 32px;
+    }
+    .logo-text {
+        font-size: 32px;
+    }
+    .mons-text {
+        font-size: 40px;
+    }
+}

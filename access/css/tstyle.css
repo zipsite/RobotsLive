@@ -13,20 +13,6 @@ a {
     color: #fff;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-
-    font-family: 'JetBrains-Mono', monospace;
-    font-style: normal;
-    color:#fff;
-    background-color: #000;
-    overflow: hidden;
-}
-
 .a-text {
     color: #fff;
 
@@ -35,7 +21,7 @@ body {
     border-bottom-style: solid;
 
     transition-property: all;
-    transition-duration: 400ms;
+    transition-duration: 200ms;
     transition-timing-function: ease;
     transition-delay: 0s;
 }
@@ -68,44 +54,58 @@ body {
     font-size: 64px;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'JetBrains-Mono', monospace;
+    font-style: normal;
+    color:#fff;
+    background-color: #000;
+    overflow: hidden;
+}
+
 .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
-
+    
+    mix-blend-mode: difference;
+    
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    mix-blend-mode: difference;
 }
 
 .nav-menu {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 72px;
 
-    padding: 0px;
-
-    flex: none;
     order: 1;
 }
 
 .main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    gap: 24px;
+    width: 100%;
+    height: 100%;
+    
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //gap: 24px;
+    
     overflow-y: auto;
 }
+
 .banner {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -117,24 +117,36 @@ body {
 
 .content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 64px;
-    gap: 24px;
+    flex-direction: column;
+    gap:16px;
 }
 
 .footer {
+    
+    
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 64px;
-    gap: 72px;
+    align-content: flex-start;
+    gap: 32px;
+
+    
+    flex-wrap: wrap;
+    
+    width: 100%;
+    
+
 }
 
 .block {
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    
+}
+
+.container {
+    width: 100%;
+    padding: 16px 48px;
 }
