@@ -1,23 +1,27 @@
 @media (max-width: 1113px) {
+}
+@media (max-width: 744px) {
     .nav-menu {
         display: none;
     }
-}
-@media (max-width: 540px) {
+    .nav-btn {
+        display: flex;
+    }
+
+    .norm-block {
+        padding: 16px;
+    }
     
-    .norm-text {
-        font-size: 16px;
+    .flex-row-gap {
+        gap: 12px;
     }
-    .btn-text {
-        font-size: 16px;
+    
+    .indent * {
+        margin-top: 12px;
     }
-    .high-text {
-        font-size: 32px;
-    }
-    .logo-text {
-        font-size: 32px;
-    }
-    .mons-text {
-        font-size: 40px;
+}
+@media (max-width: 543px) {
+    .footer {
+        flex-direction: column;
     }
 }
