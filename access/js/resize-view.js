@@ -5,5 +5,5 @@ function resizeView () {
 
 resizeView();
 
-window.addEventListener('resize', resizeView());
+window.addEventListener('resize', resizeView);
 
