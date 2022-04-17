@@ -1,12 +1,8 @@
-@media (max-width: 538px) {
-
+@media (max-width: 700px) {
     #nav-btn {
         display: block;
     }
 
-    .footer {
-        flex-direction: column;
-    }
     .nav {
         position: fixed;
 
@@ -30,4 +26,11 @@
         position: fixed;
         left: -100%;
     }
+}
+
+@media (max-width: 538px) {
+    .footer {
+        flex-direction: column;
+    }
+    
 }

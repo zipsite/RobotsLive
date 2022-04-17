@@ -86,6 +86,7 @@
 }
 
 .btn-icon {
+    mix-blend-mode: difference;
     height: 100%;
 }
 
@@ -96,6 +97,7 @@
 
     width: fit-content;
     
+    cursor: pointer;
 
     color: var(--self-color);
 

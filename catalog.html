@@ -9,7 +9,7 @@
         <link rel="manifest" href="/access/manifest/manifest.json">
 		
 	</head>
-	<body class="style-text night-theme one-color transition">
+	<body id="bodybox" class="style-text night-theme one-color transition">
 		<div class="header one-color flat-block">
 			<h1 class="high-text two-color">RobotsLive</h1>
 			<img id="nav-btn" src="/access/icon/nav-burger.svg"/>
@@ -17,27 +17,28 @@
 				<a class="a-text two-color" href="/"><p class="norm-text">Главная</p></a>
 				<a class="a-text two-color" href="/catalog.html"><p class="norm-text">Каталог</p></a>
 				<a class="a-text two-color" href="#"><p class="norm-text">Корзина</p></a>
+				<div id="toggle-theme" class="a-text two-color"><p class="norm-text">Тема</p></div>
 				<a class="a-text two-color" href="#"><p class="norm-text">Войти</p></a>
 			</div>
 		</div>
 		<div class="main">
 			<div class="content scroll-align-start">
                 <div class="button-bar norm-block">
-                    <div class="btn-with-icon">
-						<div class="btn-place-text two-root-color">
-							<p class="btn-text one-root-color">Сортировка</p>
+                    <div class="btn-with-icon one-color">
+						<div class="btn-place-text two-color">
+							<p class="btn-text one-color">Сортировка</p>
 						</div>
-						<div class="btn-place-icon one-root-color">
-							<div class="btn-icon-border two-root-color"></div>
+						<div class="btn-place-icon one-color">
+							<div class="btn-icon-border two-color"></div>
 							<img class="btn-icon" src="/access/icon/arrow-down.svg" />
 						</div>
 					</div>
-                    <div class="btn-with-icon">
-						<div class="btn-place-text two-root-color">
-							<p class="btn-text one-root-color">Категории</p>
+                    <div class="btn-with-icon one-color">
+						<div class="btn-place-text two-color">
+							<p class="btn-text one-color">Категории</p>
 						</div>
-						<div class="btn-place-icon one-root-color">
-							<div class="btn-icon-border two-root-color" ></div>
+						<div class="btn-place-icon one-color">
+							<div class="btn-icon-border two-color" ></div>
 							<img class="btn-icon" src="/access/icon/arrow-down.svg" />
 						</div>
 					</div>
@@ -119,5 +120,6 @@
 		</div>
         <script src="/access/js/resize-view.js"></script>
 	    <script src="/access/js/nav-menu.js"></script>
+		<script src="/access/js/toggle-theme.js"></script>
 	</body>
 </html>
