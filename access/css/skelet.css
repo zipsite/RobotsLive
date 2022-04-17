@@ -1,7 +1,10 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+
+    height: 100vh; 
+    /* фолбэк для браузеров, которые не поддерживают пользовательские свойства */
+    height: calc(var(--vh, 1vh) * 100);
 
     background-color: var(--self-color);
 
@@ -13,7 +16,7 @@ body {
 
 .header {
     width: 100%;
-
+    z-index: 10;
     background-color: var(--self-color);
 
     display: flex;
@@ -26,10 +29,10 @@ body {
     width: var(--high-text);
     height: var(--high-text);
 
-    background-color: var(--self-color);
+    mix-blend-mode: difference;
 }
 
-#nav-menu {
+.nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -40,14 +43,31 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 .content {
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
     height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.list-staff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: var(--norm-gap);
 }
 
 .footer {
+    width: 100%;
+    min-height: 100%;
+
     display: flex;
     flex-direction: row;
     gap: var(--norm-gap);

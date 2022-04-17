@@ -12,3 +12,10 @@
     --one-color: var(--one-root-color);
     --two-color: var(--two-root-color);
 }
+
+.transition {
+    transition-property: all;
+    transition-duration: 470ms;
+    transition-timing-function: cubic-bezier(0.07, 1, 0.12, 0.96);
+    transition-delay: 0s;
+}

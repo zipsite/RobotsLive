@@ -6,38 +6,34 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1"/>
 		<title>RobotsLive</title>
 		<link rel="stylesheet" href="/access/css/main.css" />
-		
 	</head>
 	<body class="style-text night-theme one-color">
 		<div class="header one-color flat-block">
 			<h1 class="high-text two-color">RobotsLive</h1>
-			<div id="nav-btn" class="two-color">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div id="nav-menu" class="">
-				<a class="a-text two-color" href="#"><p class="norm-text">Каталог</p></a>
+			<img id="nav-btn" src="/access/icon/nav-burger.svg"/>
+			<div id="nav-menu" class="nav  nav-close transition">
+				<a class="a-text two-color" href="/"><p class="norm-text">Главная</p></a>
+				<a class="a-text two-color" href="/catalog.html"><p class="norm-text">Каталог</p></a>
 				<a class="a-text two-color" href="#"><p class="norm-text">Корзина</p></a>
 				<a class="a-text two-color" href="#"><p class="norm-text">Войти</p></a>
 			</div>
 		</div>
 		<div class="main">
-			<div class="banner filling-block">
+			<div class="banner filling-block scroll-align-start">
 				<img class="banner-img" src="/access/img/image 1.png" />
 				<div class="banner-content norm-block">
-					<div class="btn-with-icon one-root-color">
+					<div class="btn-with-icon">
 						<div class="btn-place-text two-root-color">
 							<p class="btn-text one-root-color">Вниз</p>
 						</div>
-						<div class="btn-place-icon two-root-color">
-							<div class="btn-icon-border" ></div>
+						<div class="btn-place-icon one-root-color">
+							<div class="btn-icon-border two-root-color" ></div>
 							<img class="btn-icon" src="/access/icon/arrow-down.svg" />
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content">
+			<div class="content scroll-align-start">
 				<div class="flex-block-column norm-block">
 					<p class="high-text two-color">Встречайте</p>
 					<p class="norm-text two-color">
@@ -51,7 +47,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="footer norm-block">
+			<div class="footer norm-block scroll-align-start">
 				<div class="list-column">
 					<h1 class="high-text two-color">Контакты</h1>
 					<div class="list-column indent">
@@ -80,5 +76,6 @@
 			</div>
 		</div>
 	</body>
-	<script></script>
+	<script src="/access/js/resize-view.js" ></script>
+	<script src="/access/js/nav-menu.js" ></script>
 </html>

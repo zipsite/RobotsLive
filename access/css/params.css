@@ -52,6 +52,13 @@
     gap: var(--norm-gap);
 }
 
+.flex-block-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--norm-gap);
+}
+
 .flex-block-column {
     display: flex;
     flex-direction: column;
@@ -85,4 +92,12 @@
 .fit-block {
     width: fit-content;
 
+}
+
+.scroll-align-start {
+    scroll-snap-align: start;
+}
+
+.scroll-align-start {
+    scroll-snap-align: end;
 }
