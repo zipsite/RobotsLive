@@ -1,0 +1,109 @@
+
+/* Style elements */
+
+/* Card style */
+.card {
+    position: relative;
+    background-color: var(--self-color);
+    max-width: 408px;
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+.card>.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: black;
+}
+
+.card:before {
+    display: block;
+    content: "";
+    padding-top: 100%;
+}
+
+/* Input style */
+
+
+/* Button style */
+.btn-with-icon {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    //grid-template-rows: min-content;
+    width: max-content;
+
+    background-color: var(--self-color);
+}
+
+.btn-place-text {
+    padding: 12px 24px;
+    background-color: var(--self-color);
+}
+
+.btn-place-icon {
+    display: inline;
+    position: relative;
+}
+
+.btn-icon-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid var(--self-color);
+}
+
+.btn-icon {
+    height: 100%;
+}
+
+
+/* Href style */
+.a-text {
+    display: inline-block;
+
+    width: fit-content;
+    
+
+    color: var(--self-color);
+
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.a-text:hover {
+    border-bottom-color: var(--self-color);
+}
+
+/* Banner style */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}

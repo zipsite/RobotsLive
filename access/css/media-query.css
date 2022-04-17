@@ -1,0 +1,13 @@
+@media (max-width: 538px) {
+    #nav-menu {
+        display: none;
+    }
+
+    #nav-btn {
+        display: block;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}

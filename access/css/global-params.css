@@ -1,0 +1,14 @@
+.style-text {
+    font-family: 'JetBrains-Mono', monospace;
+    font-style: normal;
+}
+
+.day-theme {
+    --one-color: var(--two-root-color);
+    --two-color: var(--one-root-color)
+}
+
+.night-theme {
+    --one-color: var(--one-root-color);
+    --two-color: var(--two-root-color);
+}

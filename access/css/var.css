@@ -1,0 +1,15 @@
+:root {
+    --one-root-color: rgba(0, 0, 0, 1.0);
+    --two-root-color: rgba(255, 255, 255, 1.0);
+
+    --norm-padding: 24px;
+    --flat-padding: 12px 24px;
+
+    --norm-gap: 24px;
+    --norm-indent: 16px;
+
+    --high-text: 32px;
+    --norm-text: 16px;
+
+    --one-font: 'JetBrains-Mono', monospace;
+}
