@@ -29,6 +29,8 @@ body {
     width: var(--high-text);
     height: var(--high-text);
 
+    cursor: pointer;
+
     mix-blend-mode: difference;
 }
 
