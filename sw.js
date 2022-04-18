@@ -43,7 +43,6 @@ self.addEventListener('install', event => {
             '/access/css/params.css',
             '/access/css/skelet.css',
             '/access/css/var.css',
-            '/access/css/webkit.css',
             '/access/fonts/JetBrainsMono-Bold.ttf',
             '/access/fonts/JetBrainsMono-ExtraBold.ttf',
             '/access/fonts/JetBrainsMono-Medium.ttf',
