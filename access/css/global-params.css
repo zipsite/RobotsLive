@@ -13,12 +13,12 @@
     --two-color: var(--two-root-color);
 }
 
-* {
+/* * {
     transition-property: all;
     transition-duration: 470ms;
     transition-timing-function: cubic-bezier(0.07, 1, 0.12, 0.96);
     transition-delay: 0s;
-}
+} */
 
 ::-webkit-scrollbar {
     display: none;
@@ -26,4 +26,8 @@
 
 * {
     scrollbar-width: none;
+}
+
+:root {
+    overflow: hidden;
 }

@@ -98,6 +98,10 @@
     scroll-snap-align: start;
 }
 
-.scroll-align-start {
+.scroll-align-end {
     scroll-snap-align: end;
+}
+
+.scroll-snap-main {
+    scroll-snap-type: both mandatory;
 }
