@@ -5,7 +5,7 @@
 .card {
     position: relative;
     background-color: var(--self-color);
-    max-width: 550px;
+    max-width: 590px;
     min-width: 275px;
     flex-grow: 1;
 }
@@ -50,6 +50,19 @@
 
 /* Input style */
 
+
+/* Big card */
+.big-card {
+    max-width: 800px;
+    min-width: 300px;
+}
+
+.big-card-content {
+    display:flex;
+    flex-direction: column;
+    gap: var(--small-gap);
+}
+
 /* Button-bar */
 
 .button-bar {
@@ -88,6 +101,24 @@
 .btn-icon {
     mix-blend-mode: difference;
     height: 100%;
+}
+
+/* btn big */
+.btn-big {
+    background-color: var(--self-color);
+    mix-blend-mode: difference;
+}
+
+.btn-big:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-big-border {
+    border: 8px solid var(--self-color);
+    mix-blend-mode: difference;
+}
+.btn-big-text {
+    mix-blend-mode: difference;
 }
 
 
