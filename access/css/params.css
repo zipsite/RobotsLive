@@ -42,6 +42,10 @@
     padding: var(--norm-padding);
 }
 
+.small-block {
+    padding: var(--small-padding);
+}
+
 .flat-block {
     padding: var(--flat-padding);
 }
@@ -130,4 +134,9 @@
 
 .scroll-align-end {
     scroll-snap-align: end;
+}
+
+.container-limit {
+    max-width: 1200px;
+    margin: auto;
 }

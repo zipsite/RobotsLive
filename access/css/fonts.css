@@ -3,22 +3,26 @@
     font-style: normal;
     font-weight: 500;
     src: url("/access/fonts/JetBrainsMono-Medium.ttf");
+    font-display: swap;
 }
 @font-face {
     font-family: "JetBrains-Mono";
     font-style: italic;
     font-weight: 500;
     src: url("/access/fonts/JetBrainsMono-MediumItalic.ttf");
+    font-display: swap;
 }
 @font-face {
     font-family: "JetBrains-Mono";
     font-style: normal;
     font-weight: 700;
     src: url("/access/fonts/JetBrainsMono-Bold.ttf");
+    font-display: swap;
 }
 @font-face {
     font-family: "JetBrains-Mono";
     font-style: normal;
     font-weight: 800;
     src: url("/access/fonts/JetBrainsMono-ExtraBold.ttf");
+    font-display: swap;
 }

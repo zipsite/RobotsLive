@@ -1,106 +1,143 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1"/>
-		<title>RobotsLive</title>
-		<!-- Set icon -->
-		<link rel="apple-touch-icon" sizes="57x57" href="/access/config/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/access/config/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/access/config/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/access/config/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/access/config/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/access/config/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/access/config/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/access/config/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/access/config/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/access/config/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/access/config/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/access/config/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/access/config/favicon-16x16.png">
-		<!-- Set theme and manifest -->
-		<link rel="manifest" href="/access/config/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/access/config/ms-icon-144x144.png">
-		<meta name="theme-color" content="#000000">
-		<!-- Set style -->
-		<link rel="stylesheet" href="/access/css/main.css"/>
-	</head>
-	<body id="bodybox" class="style-text night-theme one-color">
-		<div class="header one-color flat-block">
-			<h1 class="high-text two-color">RobotsLive</h1>
-			<img id="nav-btn" class="nav-btn" src="/access/icon/nav-burger.svg"/>
-			<div id="nav-menu" class="nav nav-close transition">
-				<a class="a-text two-color" href="/"><p class="norm-text">Главная</p></a>
-				<a class="a-text two-color" href="/catalog.html"><p class="norm-text">Каталог</p></a>
-				<a class="a-text two-color" href="#"><p class="norm-text">Корзина</p></a>
-				<div id="toggle-theme" class="a-text two-color"><p class="norm-text">Тема</p></div>
-				<a class="a-text two-color" href="#"><p class="norm-text">Войти</p></a>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1" />
+	<title>RobotsLive</title>
+	<!-- Set icon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/access/config/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/access/config/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/access/config/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/access/config/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/access/config/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/access/config/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/access/config/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/access/config/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/access/config/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/access/config/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/access/config/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/access/config/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/access/config/favicon-16x16.png">
+	<!-- Set theme and manifest -->
+	<link rel="manifest" href="/access/config/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/access/config/ms-icon-144x144.png">
+	<meta name="theme-color" content="#000000">
+	<!-- Set style -->
+	<link rel="stylesheet" href="/access/css/main.css" />
+</head>
+
+<body id="bodybox" class="style-text night-theme one-color">
+	<div class="header one-color flat-block">
+		<h1 class="high-text two-color">RobotsLive</h1>
+		<img id="nav-btn" class="nav-btn" src="/access/icon/nav-burger.svg" />
+		<div id="nav-menu" class="nav nav-close transition">
+			<a class="a-text two-color" href="/">
+				<p class="norm-text">Главная</p>
+			</a>
+			<a class="a-text two-color" href="/catalog.html">
+				<p class="norm-text">Каталог</p>
+			</a>
+			<a class="a-text two-color" href="/basket.html">
+				<p class="norm-text">Корзина</p>
+			</a>
+			<div id="toggle-theme" class="a-text two-color">
+				<p class="norm-text">Тема</p>
+			</div>
+			<a class="a-text two-color" href="#">
+				<p class="norm-text">Войти</p>
+			</a>
+		</div>
+	</div>
+	<div class="main">
+		<div class="content scroll-align-start">
+			<div class="container-staff container-limit norm-block">
+				<div class="card two-color big-card">
+					<div class="card-content big-card-content">
+						<div class="card-place-img">
+							<img class="card-img" src="/access/img/Frame 5.png" />
+						</div>
+					</div>
+				</div>
+				<div class="card two-color big-card">
+					<div class="card-content big-card-content">
+						<p class="high-text one-color align-end">100000$</p>
+						<div class="filling-block">
+							<p class="high-text one-color">Tesla-bot</p>
+							<p class="norm-text one-color">Антропоморфный многофункциональный робот</p>
+						</div>
+						<a href="/basket.html">
+						<div class="btn-big two-root-color">
+							<div class="btn-big-text btn-text two-root-color">В корзину</div>
+						</div>
+					</a>
+						<div class="btn-big two-root-color">
+							<div class="btn-big-text btn-text two-root-color">Купить</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-staff-desc container-limit norm-block">
+				<p class="high-text two-color">Технические характеристики</p>
+				<p class="norm-text two-color">Робот Tesla Bot, рост которого составит порядка 173 см, а масса - 57 кг,
+					сможет поднимать 68 кг веса. Он будет основан на тех же технологиях, которые Tesla использует в
+					своих автомобилях.</p>
 			</div>
 		</div>
-		<div class="main">
-			<div class="content scroll-align-start">
-				<div class="flex-block norm-gap flex-wrap align-center norm-block filling-block-up">
-					<div class="card two-color big-card">
-                        <div class="card-content big-card-content">
-                            <div class="card-place-img">
-                                <img class="card-img" src="/access/img/Frame 5.png"/>
-                            </div>
-                        </div>
-                    </div>
-					<div class="card two-color big-card">
-                        <div class="card-content big-card-content">
-							<p class="high-text one-color align-end">100000$</p>
-							<div class="filling-block">
-								<p class="high-text one-color">Tesla-bot</p>
-								<p class="norm-text one-color">Антропоморфный многофункциональный робот</p>
-							</div>
-							<div class="btn-big two-root-color flat-block flex-block-column align-center btn-big-border">
-									<div class="btn-big-text btn-text two-root-color">В корзину</div>
-							</div>
-							<div class="btn-big two-root-color flat-block flex-block-column align-center btn-big-border">
-								<div class="btn-big-text btn-text two-root-color">Купить</div>
-							</div>
-                        </div>
-                    </div>
-				</div>
-				<div class="flex-block norm-gap flex-column norm-block filling-block">
-					<p class="high-text two-color">Технические характеристики</p>
-					<p class="norm-text two-color">Робот Tesla Bot, рост которого составит порядка 173 см, а масса - 57 кг, сможет поднимать 68 кг веса. Он будет основан на тех же технологиях, которые Tesla использует в своих автомобилях.</p>
+		<div class="footer norm-block scroll-align-start">
+			<div class="list-column">
+				<h1 class="high-text two-color">Контакты</h1>
+				<div class="list-column indent">
+					<a class="a-text two-color" href="#">
+						<p class="norm-text">Телефон</p>
+					</a>
+					<a class="a-text two-color" href="#">
+						<p class="norm-text indent">Эл.почта</p>
+					</a>
+					<a class="a-text two-color" href="#">
+						<p class="norm-text indent">Соцсети</p>
+					</a>
+					<a class="a-text two-color" href="#">
+						<p class="norm-text indent">Адрес</p>
+					</a>
 				</div>
 			</div>
-			<div class="footer norm-block scroll-align-start">
-				<div class="list-column">
-					<h1 class="high-text two-color">Контакты</h1>
-					<div class="list-column indent">
-						<a class="a-text two-color" href="#"><p class="norm-text">Телефон</p></a>
-						<a class="a-text two-color" href="#"><p class="norm-text indent">Эл.почта</p></a>
-						<a class="a-text two-color" href="#"><p class="norm-text indent">Соцсети</p></a>
-						<a class="a-text two-color" href="#"><p class="norm-text indent">Адрес</p></a>
-					</div>
-				</div> 
-				<div class="list-column">
-					<div class="high-text two-color">Покупателю</div>
-					<div class="list-column indent">
-						<a class="a-text two-color" href="#"><p class="norm-text">Соглашение</p></a>
-						<a class="a-text two-color" href="#"><p class="norm-text indent">Доставка</p></a>
-						<a class="a-text two-color" href="#"><p class="norm-text indent">Оплата</p></a>
-					</div>
+			<div class="list-column">
+				<div class="high-text two-color">Покупателю</div>
+				<div class="list-column indent">
+					<a class="a-text two-color" href="#">
+						<p class="norm-text">Соглашение</p>
+					</a>
+					<a class="a-text two-color" href="#">
+						<p class="norm-text indent">Доставка</p>
+					</a>
+					<a class="a-text two-color" href="#">
+						<p class="norm-text indent">Оплата</p>
+					</a>
 				</div>
-				<div class="list-column">
-					<div class="high-text two-color">О нас</div>
-					<div class="list-column indent">
-						<a class="a-text two-color" href="#"><p class="norm-text">О компании</p></a>
-						<a class="a-text two-color" href="#"><p class="norm-text indent">Партнёры</p></a>
-						<a class="a-text two-color" href="#"><p class="norm-text indent">Блог</p></a>
-					</div>
+			</div>
+			<div class="list-column">
+				<div class="high-text two-color">О нас</div>
+				<div class="list-column indent">
+					<a class="a-text two-color" href="#">
+						<p class="norm-text">О компании</p>
+					</a>
+					<a class="a-text two-color" href="#">
+						<p class="norm-text indent">Партнёры</p>
+					</a>
+					<a class="a-text two-color" href="#">
+						<p class="norm-text indent">Блог</p>
+					</a>
 				</div>
 			</div>
 		</div>
-		<script src="/access/js/main.js"></script>
-		<script src="/access/js/resize-view.js"></script>
-		<script src="/access/js/nav-menu.js"></script>
-		<script src="/access/js/toggle-theme.js"></script>
-	</body>
+	</div>
+	<!-- <script src="/access/js/main.js"></script> -->
+	<script src="/access/js/resize-view.js"></script>
+	<script src="/access/js/nav-menu.js"></script>
+	<script src="/access/js/toggle-theme.js"></script>
+</body>
+
 </html>

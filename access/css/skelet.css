@@ -51,8 +51,6 @@ body {
 
 .content {
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -74,3 +72,4 @@ body {
     flex-direction: row;
     gap: var(--norm-gap);
 }
+
