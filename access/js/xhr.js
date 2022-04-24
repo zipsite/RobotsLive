@@ -26,15 +26,19 @@ function SendRequest(r_method, r_path, r_args, r_handler)
             {
                 //Передаем управление обработчику пользователя
                 r_handler(Request);
+                console.log("get");
+                return null;
             }
             else
             {
-                //Оповещаем пользователя о произошедшей ошибке
+                console.error("no loaded");
+                return null;
             }
         }
         else
         {
-            //Оповещаем пользователя о загрузке
+            console.log("loaded");
+            return null;
         }
     
     }

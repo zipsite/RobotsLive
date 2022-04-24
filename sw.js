@@ -1,11 +1,13 @@
 self.addEventListener('install', event => {
   function onInstall() {
     return caches.open('static').then(cache => cache.addAll([
+      '/access/js/xhr.js',
+      '/access/js/loader.js',
       '/index.html',
       '/views/home.html',
       '/views/catalog.html',
       '/views/basket.html',
-      '/views/staff.html',
+      '/views/staff.html'
     ]));
   }
   event.waitUntil(onInstall(event));
