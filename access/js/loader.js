@@ -33,20 +33,22 @@ function LinkClick(href) {
 
 }
 
+function handler(e) {
+    e.preventDefault();
+    console.log(e.currentTarget.getAttribute("href"));
+    LinkClick(e.currentTarget.getAttribute("href"));
+    this.removeEventListener('click', handler);
+    return false;
+}
+
 function InitLinks() {
     var links = document.getElementsByClassName("spec-a"); //Находим все ссылки на странице
 
-
+    
     
 
     for (var i = 0; i < links.length; i++) {
         //Отключаем событие по умолчанию и вызываем функцию LinkClick
-        links[i].addEventListener("click", function handler(e) {
-            e.preventDefault();
-            console.log(e.currentTarget.getAttribute("href"));
-            LinkClick(e.currentTarget.getAttribute("href"));
-            this.removeEventListener('click', handler);
-            return false;
-        });
+        links[i].addEventListener("click", handler);
     }
 }
