@@ -27,6 +27,9 @@ function LinkClick(href) {
     else if (props[1] == 'basket') {
         SendRequest("GET", "/views/basket.html", "", Handler);
     }
+    else if (props[1] == 'checkout') {
+        SendRequest("GET", "/views/checkout.html", "", Handler);
+    }
 
 }
 

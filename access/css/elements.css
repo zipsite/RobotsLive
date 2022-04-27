@@ -293,3 +293,51 @@
     align-self: center;
 
 }
+
+/* Form */
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--norm-gap);
+}
+
+.form-norm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--norm-indent);
+    max-width: 366px;
+}
+
+/* Input */
+
+.norm-input {
+    background-color: inherit;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid var(--self-color);
+    padding: 4px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.norm-input::placeholder {
+    color: var(--self-color);
+}
+
+.norm-input:focus {
+    outline: 0;
+}
+
+/* Select */
+
+.norm-select::selection {
+    border-radius: 0;
+    border: 2px solid var(--self-color);
+    background-color: inherit;
+    
+}
+
+.norm-select>option {
+    background-color: black;
+}
