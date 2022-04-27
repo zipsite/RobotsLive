@@ -95,7 +95,7 @@
     display: grid;
     grid-template-columns: min-content min-content;
     width: max-content;
-
+    cursor: pointer;
     background-color: var(--self-color);
 }
 
@@ -316,9 +316,14 @@
     border-radius: 0px;
     border: none;
     border-bottom: 2px solid var(--self-color);
+    margin-bottom: 2px;
     padding: 4px;
     font-family: inherit;
     width: 100%;
+    transition-property: all;
+    transition-duration: 70ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
 }
 
 .norm-input::placeholder {
@@ -327,6 +332,13 @@
 
 .norm-input:focus {
     outline: 0;
+    margin-bottom: 0px;
+    border-bottom-width: 4px;
+}
+
+.norm-input:hover {
+    margin-bottom: 0px;
+    border-bottom-width: 4px;
 }
 
 /* Select */

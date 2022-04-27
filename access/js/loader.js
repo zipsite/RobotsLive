@@ -1,3 +1,8 @@
+var data ={
+    body: "",
+    link: ""
+};
+
 
 OnLoad();
 
@@ -9,10 +14,11 @@ function OnLoad() {
 
 function LinkClick(href) {
     var props = href.split("/");
+    data.link = href;
     //Получаем параметры из ссылки. 1 - раздел, 2 - идентификатор
     var Handler = function (Request) {
-        document.getElementById("content").innerHTML = Request.responseText;
-        InitLinks();
+        data.body = Request.responseText;
+        UpdatePage();
     }
 
     if (props[1] == '') {
@@ -36,9 +42,15 @@ function LinkClick(href) {
 function handler(e) {
     e.preventDefault();
     LinkClick(e.currentTarget.getAttribute("href"));
-    history.pushState(null, null, e.currentTarget.getAttribute("href"));
     return false;
 }
+
+function UpdatePage() {
+    document.getElementById("content").innerHTML = data.body;
+    history.pushState(data.body, "Robots-Live", data.link);
+    InitLinks();
+}
+
 
 function InitLinks() {
     var links = document.getElementsByClassName("spec-a"); //Находим все ссылки на странице
