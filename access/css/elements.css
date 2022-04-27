@@ -336,11 +336,6 @@
     border-bottom-width: 4px;
 }
 
-.norm-input:hover {
-    margin-bottom: 0px;
-    border-bottom-width: 4px;
-}
-
 /* Select */
 
 .norm-select::selection {
