@@ -36,6 +36,9 @@ function LinkClick(href) {
     else if (props[1] == 'checkout') {
         SendRequest("GET", "/views/checkout.html", "", Handler);
     }
+    else if (props[1] == 'login') {
+        SendRequest("GET", "/views/login.html", "", Handler);
+    }
 
 }
 
