@@ -364,15 +364,17 @@
     height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 .login-card {
-    margin: auto;
+    margin: 0px auto;
+    margin-top: 5%;
     flex-grow: 1;
     max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: var(--norm-gap);
-    border: 4px solid var(--self-color);
+    background-color: var(--self-color);
 }
 
